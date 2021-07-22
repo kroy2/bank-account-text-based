@@ -19,4 +19,19 @@ public class Savings {
 		Savemon = Savemon - qq;
 		return Savemon;
 	}
+	public double InterestTracker() {
+		Scanner days = new Scanner(System.in);
+		System.out.println("How many days in advance you like to calculate the interest rate? Please enter a positive integer.");
+		String daysInAdvance_s = days.next();
+		int daysInAdvance = Integer.parseInt(daysInAdvance_s);
+		int x = 0;
+		while (x < daysInAdvance) {
+			in();
+			x++;
+		}
+		return inter;
+		
+	}
+	
+
 }
