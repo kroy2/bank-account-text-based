@@ -1,3 +1,4 @@
+package kanishka_roy;
 import java.io.*;
 import java.util.*;
 
@@ -84,6 +85,7 @@ public class Acc {
 							} else if (bcho.equalsIgnoreCase("Track")) {
 								for (int x = 0; x < bbb.size(); x++) {
 									System.out.println("Date " + (x + 1) + " $" + bbb.get(x));
+									saving.InterestTracker();
 									b = false;
 								}
 							}
