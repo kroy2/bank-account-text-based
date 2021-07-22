@@ -1,3 +1,4 @@
+package kanishka_roy;
 
 import java.io.*;
 import java.util.*;
@@ -29,14 +30,14 @@ public class Savings {
 		Scanner days = new Scanner(System.in);
 		System.out.println(
 				"How many days in advance you like to calculate the interest rate? Please enter a positive integer.");
-		String daysInAdvance_s = days.next();
-		int daysInAdvance = Integer.parseInt(daysInAdvance_s);
+		String daysInAdvance_s = days.next(); // Takes user response as string
+		int daysInAdvance = Integer.parseInt(daysInAdvance_s); // converts user response into integer
 		int x = 1;
-		double projectedMoney = Savemon;
+		double projectedMoney = Savemon; // encapsulation: so Savemon is not affected
 		while (x < daysInAdvance) {
 			projectedMoney = projectedMoney * 1.05;
 			x++;
-
+			// Takes amount of money currently in savings and increases amount by 5% 
 		}
 		System.out.println("$" + projectedMoney + " at day " + daysInAdvance);
 
