@@ -54,7 +54,7 @@ public class Acc {
 							}
 	// If user does not type in number for withdraw/deposit, they are presented with message written in if statement in catch exception
 						} catch (InputMismatchException d) {
-							System.out.println("This program only requires numbers typed in. \n");
+							System.out.println("Please type in a number. \n");
 							continue;
 						}
 					}
@@ -89,7 +89,7 @@ public class Acc {
 							}
 	// similar to Checking, if anything other than a number is typed into the program in this case, this message will be displayed.
 						} catch (InputMismatchException d) {
-							System.out.println("This program only requires numbers typed in. \n");
+							System.out.println("Please type in a number. \n");
 							continue;
 						}
 					}
