@@ -26,7 +26,7 @@ public class Savings {
 
 	// withdrawing money from savings account, to be called in for Savings in Acc
 	// class
-	public double with(double moneyOut) {
+	public double withdraw(double moneyOut) {
 		SavingsMoney = SavingsMoney - moneyOut;
 		return SavingsMoney;
 	}
