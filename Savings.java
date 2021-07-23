@@ -1,3 +1,5 @@
+// @Author primary - Ali
+// @Author secondary - Kanishka
 
 import java.io.*;
 import java.util.*;
@@ -29,6 +31,10 @@ public class Savings {
 		return SavingsMoney;
 	}
 
+	/**
+	 * function for interest tracker (not yet completed)
+	 * function includes operation for interest tracker, method to be later called in Acc
+	 */
 	public void InterestTracker() {
 		Scanner days = new Scanner(System.in);
 		System.out.println(
