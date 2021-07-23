@@ -1,3 +1,4 @@
+package kanishka_roy;
 import java.io.*;
 import java.util.*;
 
@@ -39,12 +40,12 @@ public class Acc {
 							if (acho.equalsIgnoreCase("Withdraw")) { 
 								System.out.println("What is the amount you want to withdraw?");
 								checking.with(a.nextDouble());
-								System.out.println("In your Checking account, there is $" + checking.Checkmon + "\n");
+								System.out.println("In your Checking account, there is $" + checking.CheckingMoney + "\n");
 								b = false;
 							} else if (acho.equalsIgnoreCase("Deposit")) {
 								System.out.println("What is the amount you want to deposit?");
 								checking.deposit(a.nextDouble());
-								System.out.println("In your Checking account, there is $" + checking.Checkmon + "\n");
+								System.out.println("In your Checking account, there is $" + checking.CheckingMoney + "\n");
 								b = false;
 	// tracking money based on user interaction with the program
 							} else if (acho.equalsIgnoreCase("Track")) {
@@ -73,12 +74,12 @@ public class Acc {
 							if (bcho.equalsIgnoreCase("Deposit")) {
 								System.out.println("What is the amount you want to deposit?");
 								saving.deposit(a.nextDouble());
-								System.out.println("In your Savings account, there is $" + saving.Savemon + "\n");
+								System.out.println("In your Savings account, there is $" + saving.SavingsMoney + "\n");
 								b = false;
 							} else if (bcho.equalsIgnoreCase("Withdraw")) {
 								System.out.println("What is the amount you want to withdraw?");
 								saving.with(a.nextDouble());
-								System.out.println("In your Savings account, there is $" + saving.Savemon + " including 5% interest" + "\n");
+								System.out.println("In your Savings account, there is $" + saving.SavingsMoney + " including 5% interest" + "\n");
 								b = false;
 	// Tracking similar to that of Checking, but accounting for the fact that there is a 5% interest applied to the account everyday. 
 							} else if (bcho.equalsIgnoreCase("Track")) {
@@ -98,9 +99,9 @@ public class Acc {
 				} else if (choices.equalsIgnoreCase("Exit")) {
 					System.exit(0);
 				}
-				bbb.add(saving.Savemon);
+				bbb.add(saving.SavingsMoney);
 				saving.in();
-				aaa.add(checking.Checkmon);
+				aaa.add(checking.CheckingMoney);
 			} catch (InputMismatchException d) {
 				System.out.println("This program only requires numbers typed in. \n");
 				continue;
