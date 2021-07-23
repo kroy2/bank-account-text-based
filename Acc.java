@@ -1,4 +1,3 @@
-package kanishka_roy;
 import java.io.*;
 import java.util.*;
 public class Acc 
@@ -15,6 +14,7 @@ public class Acc
 			new ArrayList<Double>();
 	ArrayList<Double>bbb=
 			new ArrayList<Double>();
+	
 	public String checking()
 	{
 		while(true)
