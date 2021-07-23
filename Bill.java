@@ -1,5 +1,3 @@
-package kanishka_roy;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
