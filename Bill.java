@@ -1,3 +1,5 @@
+package kanishka_roy;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -31,8 +33,7 @@ public class Bill {
 	public void setBillprice() {
 		Scanner BillPrice = new Scanner(System.in);
 		System.out.println("What is the price of the bill every instance?");
-		pricePerfrequency = (double) Integer.parseInt(BillPrice.next()); // Converting response to integer, and casting
-																			// it to a double
+		pricePerfrequency = Double.parseDouble(BillPrice.next()); // Converting response to a double
 	}
 
 	public double getBillprice() {
