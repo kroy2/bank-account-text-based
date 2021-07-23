@@ -1,28 +1,33 @@
+package kanishka_roy;
 
 import java.io.*;
 import java.util.*;
 
 public class Savings {
-	public double Savemon, inter;
-
+	public double SavingsMoney, inter;
+	
+	// Prints the current amount of money within savings account
+	public void currentFundsSav() {
+		System.out.println("You have " + "$" + SavingsMoney + " dollars in your savings account");
+	}
 	// Applied interest to the savings account balance, to be called in for Savings
 	// in Acc class
 	public double in() {
-		Savemon = Savemon + inter;
-		return inter = Savemon * 0.05;
+		SavingsMoney = SavingsMoney + inter;
+		return inter = SavingsMoney * 0.05;
 	}
 
 	// adding money to savings account, to be called in for Savings in Acc class
 	public double deposit(double moneyIn) {
-		Savemon = Savemon + moneyIn;
-		return Savemon;
+		SavingsMoney = SavingsMoney + moneyIn;
+		return SavingsMoney;
 	}
 
 	// withdrawing money from savings account, to be called in for Savings in Acc
 	// class
 	public double with(double moneyOut) {
-		Savemon = Savemon - moneyOut;
-		return Savemon;
+		SavingsMoney = SavingsMoney - moneyOut;
+		return SavingsMoney;
 	}
 
 	public void InterestTracker() {
@@ -32,7 +37,7 @@ public class Savings {
 		String daysInAdvance_s = days.next(); // Takes user response as string
 		int daysInAdvance = Integer.parseInt(daysInAdvance_s); // converts user response into integer
 		int x = 1;
-		double projectedMoney = Savemon; // encapsulation: so Savemon is not affected
+		double projectedMoney = SavingsMoney; // encapsulation: so SavingsMoney is not affected
 		while (x < daysInAdvance) {
 			projectedMoney = projectedMoney * 1.05;
 			x++;
