@@ -2,14 +2,14 @@
 // @Author secondary - Ali
 
 import java.io.*;
-import java.util.*;
+import java.util.*; // used since there is a creation of a new Scanner
 
 public class Acc {
-	Scanner a = new Scanner(System.in);
-	String chequingChoice, savingsChoice; //string variables to be used for chequing and Savings respectively 
-	Savings savings = new Savings();
-	Chequing chequing = new Chequing();
-	String choices;
+	Scanner a = new Scanner(System.in); // creation of a new Scanner instance which points to an input stream passed as an argument, allowing for the scanning of integers and strings
+	String chequingChoice, savingsChoice; //string variables to be used for chequing and Savings respectively. (Later called in for withdrawal or deposit choices in respective account)
+	Savings savings = new Savings(); // Savings obj. created to be called into Savings conditionals
+	Chequing chequing = new Chequing(); // Chequing obj. created to be called into Chequing conditionals
+	String choices; // String variable choices assigned to be called in for try exceptions in chequing and savings
 	// variable for array list set in order to be called later for tracking
 	ArrayList<Double> chequingAmount = new ArrayList<Double>();
 	ArrayList<Double> savingsAmount = new ArrayList<Double>();
@@ -43,7 +43,7 @@ public class Acc {
 							chequingChoice = a.next();
 							if (chequingChoice.equalsIgnoreCase("Withdraw")) { 
 								System.out.println("What is the amount you want to withdraw?");
-								chequing.with(a.nextDouble());
+								chequing.withdraw(a.nextDouble());
 								System.out.println("In your chequing account, there is $" + chequing.ChequingMoney + "\n");
 								b = false;
 							} else if (chequingChoice.equalsIgnoreCase("Deposit")) {
