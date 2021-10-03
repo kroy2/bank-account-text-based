@@ -1,6 +1,3 @@
-// @Author primary - Kanishka
-// @Author secondary - Ali
-
 import java.io.*;
 import java.util.*; // used since there is a creation of a new Scanner
 
