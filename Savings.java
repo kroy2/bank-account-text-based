@@ -1,5 +1,3 @@
-// @Author primary - Ali
-// @Author secondary - Kanishka
 
 import java.io.*;
 import java.util.*;
