@@ -1,4 +1,3 @@
-// @Author Kanishka
 
 import java.util.Scanner;
 
